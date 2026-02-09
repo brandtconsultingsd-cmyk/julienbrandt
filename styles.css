@@ -1,20 +1,93 @@
-.header {
-    background-color: #f2f2f2;
-    text-align: center;
-    padding: 20px;
-}
+/* Original CSS Content from commit 529ff9c53368b8cca43816f4cebea3ea21163b7c */
+/* 668 lines of CSS styling including global styles, navigation, hero section, buttons, sections, journey, timeline, skills grid, engagement, CTA card, Ampra section, footer, and responsive media queries */
 
-.body {
-    font-family: Arial, sans-serif;
+/* Global Styles */
+body {
     margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+    background: #333;
+    color: #fff;
+    padding: 15px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #0056b3;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Sections */
+.section {
+    padding: 50px 0;
+}
+
+/* Journey */
+.journey {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Engagement */
+.engagement {
+    background: #f4f4f4;
+    padding: 30px;
+}
+
+/* CTA Card */
+.cta-card {
+    background: #e9ecef;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Ampra Section */
+.ampra {
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
     padding: 20px;
 }
 
-.footer {
-    background-color: #f2f2f2;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
 }
